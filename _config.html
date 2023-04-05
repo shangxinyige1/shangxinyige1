@@ -1,0 +1,49 @@
+title: Homebrew
+description: The Missing Package Manager for macOS (or Linux).
+
+exclude:
+  - bin
+  - CNAME
+  - Gemfile*
+  - Rakefile
+  - README.md
+  - vendor
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: atom.xml
+
+permalink: :title
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: :year/:month/:day/:title/
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/homebrew-social-card.png
+
+logo: /assets/img/homebrew.svg
+
+github:
+  repository_nwo: Homebrew/brew.sh
+
+forkme_nwo: Homebrew/brew
+
+twitter:
+  username: MacHomebrew
+
+facebook:
+  publisher: https://www.facebook.com/machomebrew/
+
+link_rel_me_urls:
+  - https://fosstodon.org/@homebrew
